@@ -1,5 +1,3 @@
-<script src="https://cdnjs.cloudflare.com/ajax/libs/notify/0.4.2/notify.min.js"></script>
-<link href="https://cdnjs.cloudflare.com/ajax/libs/notify/0.4.2/styles/metro/notify-metro.min.css" rel="stylesheet" /><script>
     // message displayed to user goes here
     var ieMessageToUser = "You are currently using Internet Explorer. This browser is no longer supported.\nPlease contact your I.T. Department if you need assistance installing of these recommended browsers:";
     $.notify.addStyle('notifystyles', {
@@ -53,4 +51,3 @@
             console.log('not IE');
         }
     }, 1250);
-    </script>// JavaScript Document
