@@ -1,14 +1,16 @@
+<!-- BEGIN IE Alert Script --><script src="https://cdnjs.cloudflare.com/ajax/libs/notify/0.4.2/notify.min.js"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/notify/0.4.2/styles/metro/notify-metro.min.css" rel="stylesheet" /><script>
     // message displayed to user goes here
-    var ieMessageToUser = "You are currently using Internet Explorer. This browser is no longer supported.\nPlease contact your I.T. Department if you need assistance installing of these recommended browsers:";
+    var ieMessageToUser = "You are currently using Internet Explorer. This browser is no longer supported.\nPlease contact your I.T. Department if you need assistance installing one of these recommended browsers:";
     $.notify.addStyle('notifystyles', {
       html: "<div class='clearfix'>"+
  "<div><span data-notify-text/> </div>"+
  "<div>"+
   "<div style='width:100%;margin:auto;padding:10px 0px 10px 0px'>"+
-    "<div style='display:inline-block;width:50%;text-align:center'>"+
+    "<div style='display:inline-block;width:30%;text-align:center'>"+
     "<a href='https://www.google.com/chrome/'>Chrome<div><img style='width:23%' src='https://phandroid.s3.amazonaws.com/wp-content/uploads/2013/12/Google_Chrome_icon.png' alt='' width='50%'></div></a>"+
     "</div>"+
-    "<div style='display:inline-block;width:50%'>"+
+    "<div style='display:inline-block;width:30%'>"+
         "<a class='browserlink' href='https://www.mozilla.org/en-US/firefox/new/'>FireFox<div><img style='width:23%' src='https://ffp4g1ylyit3jdyti1hqcvtb-wpengine.netdna-ssl.com/firefox/files/2017/12/firefox-logo-300x310.png' alt='' width='50%'' ></div></a>"+
       "</div>"+
       "</div>"+
@@ -37,7 +39,7 @@
                 });
     setTimeout(function() {
         var ua = window.navigator.userAgent;
-        var msie = 5 //ua.indexOf("MSIE ");
+        var msie = ua.indexOf("MSIE");
 
         if (msie > 0 || !!navigator.userAgent.match(/Trident.*rv\:11\./))  // If Internet Explorer, return version number
         {
@@ -51,3 +53,4 @@
             console.log('not IE');
         }
     }, 1250);
+    </script>
